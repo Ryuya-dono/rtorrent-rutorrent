@@ -1,0 +1,5 @@
+#!/usr/bin/execlineb -P
+
+with-contenv
+s6-setuidgid nginx
+php-fpm7 -F

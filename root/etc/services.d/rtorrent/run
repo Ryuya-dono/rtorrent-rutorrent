@@ -1,0 +1,5 @@
+#!/usr/bin/execlineb -P
+
+with-contenv
+s6-setuidgid nginx
+rtorrent -n -o import=/etc/rtorrent/rtorrent.rc
